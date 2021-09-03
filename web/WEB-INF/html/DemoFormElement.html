@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Html Form Element</title>
+</head>
+<body>
+<h1>Form Creation</h1>
+
+<label for="fname">First Name</label><input type="text" id="fname" name="fname" placeholder="Enter Your First Name"><br><br>
+<label for="lname">Last Name</label><input type="text" id="lname" name="lname"
+                                           placeholder="Enter Your Last Name"><br><br>
+<p>Select Gender</p><input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female"><label for="male">Female</label><br>
+
+<p>Select Bike</p><input type="checkbox" id="bike" name="bike" value="bike"><label for="bike">bike</label><br>
+<input type="checkbox" id="car" name="car" value="car"><label for="car">car</label><br><br>
+<label for="cars">choose a car</label><br><br>
+<select id="cars" name="cars" size="4" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="safari">Safari</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi" selected>Audi</option>
+</select><br><br>
+<p>Textarea : </p>
+<textarea name="message" rows="5" cols="50"></textarea><br>
+<fieldset id="_fields">
+    <legend>Provide Student Detail</legend>
+    <label for="pfname">First Name<input type="text" id="pfname" name="fname"></label><br>
+    <label for="plname">Last Name<input type="text" id="plname" name="fname"></label><br>
+    <!--<input type="button" value="submit">-->
+</fieldset>
+<p>DataList : </p>
+<input list="lsttech" name="technology">
+<datalist id="lsttech">
+    <option value="java">
+    <option value=".net">
+    <option value="php">
+    <option value="python">
+</datalist>
+<br><br>
+
+<label for="optcar">Choose a car</label>
+<select id="optcar" name="optcar">
+    <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="safari" selected>Safari</option>
+    </optgroup>
+    <optgroup label="German Cars">
+        <option value="mercedes">mercedes</option>
+        <option value="audi" selected>audi</option>
+    </optgroup>
+</select><br><br>
+<button type="button" onclick="alert('creating form')">click me</button>
+<br><br>
+
+<input type="submit" value="submit">
+</body>
+</html>

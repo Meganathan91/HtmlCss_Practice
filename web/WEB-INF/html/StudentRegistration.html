@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+    <style>
+    #_h1 {
+    color: green;
+    text-align: center;
+    text-shadow: 10px 12px 5px green;
+    text-decoration: underline;
+    }
+    table, #_tr {
+    margin: auto;
+    background-color: lightblue;
+    border: 5px solid gray;
+    border-radius: 15px;
+    width: 40%;
+    }
+
+    td {
+    padding:5px;
+    }
+
+    #_lan {
+    border: 2px dashed gray;
+    border-radius: 15px;
+    }
+
+    input.button {
+    border: 2px solid red;
+    border-radius: 15px;
+    }
+
+
+    </style>
+</head>
+<body>
+<h1 id="_h1">Student Registration</h1>
+<form>
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="fname" placeholder="Enter First Name" maxlength="20" pattern="[a-zA-Z]+"
+                       required></td>
+        </tr>
+
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="lname" placeholder="Enter Last Name" maxlength="20" pattern="[a-zA-Z]+"
+                       required></td>
+        </tr>
+
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" placeholder="Enter Email" required></td>
+        </tr>
+
+        <tr>
+            <td>Date Of Birth</td>
+            <td><input type="date" name="birthday" required></td>
+        </tr>
+
+        <tr>
+            <td>Mobile Number</td>
+            <td><input type="tel" name="phonenumber"
+                       title="First three number start between ( 6-9 ) format [6-9]{3}[0-9]{3}[0-9]{4} and length of phonenumber 10 digits"
+                       placeholder="6781236789" pattern="[6-9]{3}[0-9]{3}[0-9]{4}" required></td>
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td><input type="radio" name="gender" value="male" required>Male
+                <input type="radio" name="gender" value="female">Female
+            </td>
+        </tr>
+
+        <tr>
+            <td>Language Known</td>
+            <td id="_lan"><input type="checkbox" name="tamil" required>Tamil<br>
+                <input type="checkbox" name="english">English<br>
+                <input type="checkbox" name="hindi">Hindi
+            </td>
+        </tr>
+
+        <tr>
+            <td>City</td>
+            <td>
+                <input list="scity" name="city" required>
+                <datalist id="scity">
+                    <option value="Ariyalur"></option>
+                    <option value="Jayankondam"></option>
+                    <option value="Perambalur"></option>
+                </datalist>
+            </td>
+        </tr>
+
+        <tr>
+            <td>State</td>
+            <td><input type="text" name="state" placeholder="Enter Your State" maxlength="10" pattern="[a-zA-Z]+"
+                       required></td>
+        </tr>
+
+        <tr>
+            <td>Country</td>
+            <td><input type="text" name="country" placeholder="Enter Your Country" maxlength="10" pattern="[a-zA-Z]+"
+                       required></td>
+        </tr>
+
+        <tr>
+            <td>PinCode</td>
+            <td><input type="text" name="pincode" placeholder="Enter PinCode" pattern="[0-9]{6}" required></td>
+        </tr>
+
+        <tr>
+            <td>Student Details</td>
+            <td><textarea name="details" cols="50" rows="5" maxlength="100" required></textarea></td>
+        </tr>
+
+        <tr>
+            <td class="button" colspan="2" align="center">
+                <input type="submit" value="Submit" class="button">
+                <input type="reset" value="Reset" class="button">
+            </td>
+        </tr>
+
+
+    </table>
+</form>
+</body>
+</html>

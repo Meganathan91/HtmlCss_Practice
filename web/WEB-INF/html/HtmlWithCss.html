@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Applying Css style</title>
+    <link type="text/css" rel="stylesheet" href=".../html/styles.css">
+    <!-- (*) given all html element affected by this style -->
+    <style>
+    #_p {
+    color:red;
+    text-align:center;
+    }
+
+    h2.large {
+    font-size:40px;
+    }
+
+    .body {
+    background-color:LightGray;
+    border:1px solid blue;
+    }
+    ._p {
+    border:3px black; /* we can define border style color width in single line like this */
+    border-bottom-style: solid;
+    background-color: white;
+    /*border-radius: 12px; border will display like round*/
+    }
+/* create space out side of given  h1 element */
+    #_margin {
+    border: 5px solid green;
+    margin: 80px;
+    }
+
+    /* padding create space inside of defined border */
+
+    #_padding {
+    border: 10px dotted red;
+    padding: 20px;
+    }
+
+    /* css set height and width for element */
+    #_padding {
+    margin: auto;
+    }
+
+    #_heightwidth {
+    margin: 75px;
+    border:2px dashed red;
+    height: 150px;
+    width: 80%;
+    }
+
+    /*  css box model with outline with offset example  */
+
+    div {
+    margin: 25px;
+    border:10px solid red;
+    padding: 25px;
+    background-color:lightblue;
+    outline: 5px solid green;
+    outline-offset:25px;
+    }
+
+    /*  css text color, alignment, text-decoration   */
+    h2.text {
+    color: blue;
+    text-align: right;
+    margin: 40px;
+    text-decoration: overline;
+    }
+
+    /*  text transformation */
+    p.lowercase {
+    text-transform: lowercase;
+    }
+    p.uppercase {
+    text-transform: uppercase;
+    }
+    p.capitalize {
+    text-transform: capitalize;
+    }
+
+    /*  text spacing */
+
+    h2.letterspace {
+    text-align:center;
+    letter-spacing:5px;
+    }
+    p.lineheight {
+    line-height:5px;
+    }
+
+    p.textindent {
+    text-indent: 50px;
+    }
+    p.wordspacing {
+    word-spacing:5px;
+    }
+    p.lineheight {
+    line-height:2.8;
+    }
+    h1.textshadow {
+    text-shadow: 2px 3px 4px red;
+    }
+
+    a:link {
+    color: blue;
+    }
+    </style>
+</head>
+<body>
+<h1 id="_p">STUDENT DETAILS</h1>
+<h2 class="p large">Subject</h2>
+
+<h1 class="_p">background</h1>
+
+<!--margin example -->
+<p id="_margin">Margin Example Outside of defined border</p>
+
+<!--padding example -->
+<p id="_padding">Padding Example inside of defined border</p>
+
+<!--css set height and width for element-->
+<p id="_heightwidth">css set height and width for element</p>
+
+<!-- css box model example -->
+
+<h1 style="text-align:center;">css box model with outline offset example</h1>
+<div>
+    Css is used to give style for html document. And also adding space outside of element using margin.
+    And also adding space inside of element using padding. Using border shorthand add width, style and
+    color for border. Apply width for element only not for border, padding and margin.
+
+</div>
+
+<!-- css color, text, decoration, transformation  example -->
+
+<h2 class="text">css text, alignment, text decoration example</h2>
+
+<h2 style="text-align:center;">text transform example</h2>
+<p class="lowercase">text transform given text modify lower, upper and lowercase</p>
+<p class="uppercase">text transform given text modify lower, upper and uppercase</p>
+<p class="capitalize">text transform given text modify lower, upper and capitalize</p>
+
+<!--  text spacing example -->
+<h2 class="letterspace">letter spacing mean every character intermediate added space</h2>
+<p class="textindent"> text indent meant initially added some space</p>
+<p class="wordspacing">word space each word have added </p>
+<p class="lineheight">text spacing, text indent, line height, letter space, word space, white space example</p>
+
+<!-- text shadow example -->
+<h1 class="textshadow">text shadow example value 2px mention for horizontal shadow and
+    4px the vertical shadow and 6px for blur effect red for color
+</h1>
+
+<!-- css link example -->
+<a href="https://www.w3schools.com/css">css link</a>
+</body>
+</html>

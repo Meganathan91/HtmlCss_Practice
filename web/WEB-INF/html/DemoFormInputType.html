@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Input Type</title>
+    <link type="text/css" rel="stylesheet" href=".../css/styles.css"/>
+</head>
+<body>
+<h1>Html Input Types</h1>
+<form>
+    <label for="_fname"></label>Enter FirstName : <input type="text" title="read only field not able to change"
+                                                         id="_fname" name="username" placeholder="Enter FirstName"
+                                                         value="Rahim" readonly><br><br>
+    <label for="_lname"></label>Enter LastName : <input type="text"
+                                                        title="disable field not able to click the text field"
+                                                        id="_lname" name="username" placeholder="Enter LastName"
+                                                        value="Ragul" disabled><br><br>
+    <label for="_word"></label>Enter Password : <input type="password"
+                                                       title="required field Must ask from user to fill before submit the form"
+                                                       id="_word" name="password" placeholder="Enter Password" required><br>
+    <p>Select Gender : </p>
+    <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label><br>
+    <p>Select Language : </p>
+    <input type="checkbox" id="checkbox1" name="java" value="java"><label for="checkbox1">java</label><br>
+    <input type="checkbox" id="checkbox2" name="php" value="php"><label for="checkbox2">php</label><br>
+    <input type="checkbox" id="checkbox3" name="python" value="python"><label for="checkbox3">python</label><br><br>
+    <label for="_color">Select your color : </label><input type="color" id="_color" name="color"><br><br>
+    <label for="_dateofbirth">Select your DOB : </label><input type="date" id="_dateofbirth" name="dateofbirth"><br><br>
+    <label for="_mindate">Enter Start Date (30-08-2021) : </label><input type="date" id="_mindate" name="mindate"
+                                                                         min="2021-08-30"><br><br>
+    <label for="_maxdate">Enter End Date (30-08-2022) : </label><input type="date" id="_maxdate" name="maxdate"
+                                                                       max="2022-08-30"><br><br>
+    <label for="_birthdaytime">Date and Time : </label><input type="datetime-local" id="_birthdaytime"
+                                                              name="time"><br><br>
+    <label for="_email">Enter Your Email : </label><input type="email" id="_email" name="email"><br><br>
+    <label for="_file">Enter Your File : </label><input type="file" id="_file" name="file"><br><br>
+    <input type="hidden" id="_hidden" name="hiddenvalue" value="12345">
+    <label for="_monthyear">Select Month and Year : </label><input type="month" id="_monthyear"
+                                                                   name="monthyear"><br><br>
+    <label for="_number">Select number between ( 1 and 100) : </label><input type="number" id="_number" name="number"
+                                                                             min="0" max="100" step="10"><br><br>
+    <label for="_range">Select number in Range : </label><input type="range" id="_range" name="numberrange" min="0"
+                                                                max="100"><br><br>
+    <label for="_phonenumber">Select PhoneNumber</label><input type="tel" id="_phonenumber" name="phonenumber"
+                                                               pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+    <label for="_time">Select time : </label><input type="time" id="_time" name="time"><br><br>
+    <label for="_week">Select week : </label><input type="week" id="_week" name="week"><br><br>
+    <input type="button" onclick="alert('hi welcome')" value="Click Me"><br><br>
+    <input type="submit" value="Submit"> <input type="reset"><br>
+</form>
+</body>
+</html>
