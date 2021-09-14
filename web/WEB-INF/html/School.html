@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School</title>
+    <style>
+
+    .bg-lightgray {
+    background-color: lightgray;
+    }
+
+    .wd-40 {
+    width: 40%;
+    }
+
+    .padding-30 {
+    padding: 30px;
+    }
+
+    .margin-50-auto {
+    margin: 70px auto;
+    }
+
+    .line-height-25 {
+    line-height: 25px;
+    }
+
+   .margin-bottom-5 {
+    margin-bottom: 5px;
+    }
+
+    .display-flex {
+    display: flex;
+    }
+
+    .column1-wd-33 {
+    width: 33.3%;
+    }
+
+    .column2-wd-53 {
+    width: 53%;
+    }
+
+    .column3-wd-100 {
+    width: 100%;
+    }
+
+    </style>
+</head>
+<body>
+<form class="bg-lightgray wd-40 padding-30 margin-50-auto line-height-25">
+    <div class="margin-bottom-5 display-flex">
+        <div class="column1-wd-33">
+            <label for="grade">GRADE</label><br>
+            <select name="grade" id="grade">
+                <option value="">Select Grade</option>
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+            </select>
+        </div>
+        <div class="column1-wd-33">
+            <label for="teacher">TEACHER</label><br>
+            <select name="teacher" id="teacher">
+                <option value="">Select Teacher</option>
+                <option value="x">X</option>
+                <option value="y">Y</option>
+                <option value="z">Z</option>
+            </select>
+        </div>
+        <div class="column1-wd-33">
+            <label for="name">NAME</label><br>
+            <input type="text" name="sname" id="name" placeholder="Name">
+        </div>
+    </div>
+    <br>
+    <div >
+        <label for="speciality">SPECIALITY</label><br>
+        <input type="text" class="column2-wd-53" id="speciality" name="speciality" placeholder="Enter the speciality">
+    </div>
+    <br>
+    <div>
+        <label for="desc">DESCRIPTION</label><br>
+        <textarea name="description" class="column3-wd-100" id="desc" cols="10" rows="5" placeholder="Enter the Description"></textarea>
+    </div>
+    <br>
+    <div>
+        <label for="schedule">SCHEDULE CONFIGURATION</label><br>
+        <input type="checkbox" id="schedule" name="schedule">Same as grade
+    </div>
+    <div align="right">
+    <input type="reset" >
+    <input type="submit" value="Save" >
+    </div>
+</form>
+</body>
+</html>

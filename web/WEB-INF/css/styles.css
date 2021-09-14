@@ -1,3 +1,276 @@
-body {
-background-color:blue;
-}
+
+    .color-green {
+    color: green;
+    }
+
+    .text-align-center {
+    text-align: center;
+    }
+
+    .text-shadow-10-12-5-green {
+    text-shadow: 10px 12px 5px green;
+    }
+
+    .text-decoration-underline {
+    text-decoration: underline;
+    }
+
+    .bg-lightgray {
+    background-color: lightblue;
+    }
+
+    .border-5-solid-gray {
+    border: 5px solid gray;
+    }
+
+    .border-radius-15 {
+    border-radius: 15px;
+    }
+
+    .width-38 {
+    width: 38%;
+    }
+
+    /* button design */
+    .border-2-solid-red {
+    border: 2px solid red;
+    }
+
+    .border-radius-15 {
+    border-radius: 15px;
+    }
+
+    .color-red {
+        color:red;
+    }
+
+    .text-align-center {
+        text-align:center;
+    }
+
+    .bg-color-lightGray {
+    background-color: lightGray;
+    }
+
+        .border-5-solid-blue {
+        border:5px solid blue;
+        }
+
+        .border-3-black {
+        border:3px black; /* we can define border style color width in single line like this */
+        }
+
+        .border-bottom-solid {
+        border-bottom-style: solid;
+        }
+
+        .bd-white {
+        background-color: white;
+        }
+
+        .border-5-solid-green {
+        border: 5px solid green;
+        }
+
+        .mrgn-80 {
+        margin: 80px;
+        }
+
+        .padding-15 {
+        padding: 15px;
+        }
+
+        .wd-20 {
+        width: 20%;
+        }
+
+        /* padding create space inside of defined border */
+
+        .border-10-dotted-red {
+        border: 10px dotted red;
+        padding: 20px;
+        }
+
+        /* css set height and width for element */
+        .margin-auto {
+        margin: auto;
+        }
+
+        .margin-75 {
+        margin: 75px;
+        }
+
+        .height-460 {
+        height: 460px;
+        }
+        .wd-80 {
+        width: 80%;
+        }
+
+        /*  css box model with outline with offset example  */
+
+
+        .m-25 {
+            margin: 25px;
+        }
+
+        .border-10-solid-red {
+            border:10px solid red;
+        }
+
+        .padding-25 {
+            padding: 25px;
+        }
+
+        .bg-color-lightgray {
+            background-color:lightblue;
+        }
+
+        .outline-5-solid-green {
+            outline: 5px solid green;
+        }
+
+        .outline-offset-25 {
+            outline-offset:25px;
+        }
+
+        /*  css text color, alignment, text-decoration   */
+
+        .text-color-blue {
+        color: blue;
+        }
+
+        .text-align-right {
+        text-align: right;
+        }
+
+        .mrgn-40 {
+        margin: 40px;
+        }
+
+        .text-decoration-overline {
+        text-decoration: overline;
+        }
+
+        /*  text transformation */
+
+        .text-transform-lowercase {
+        text-transform: lowercase;
+        }
+
+        .text-transform-uppercase {
+        text-transform: uppercase;
+        }
+
+        .text-transform-capitalize {
+        text-transform: capitalize;
+        }
+
+        /*  text spacing */
+
+        .text-align-center {
+        text-align:center;
+        }
+
+        .letter-spacing {
+        letter-spacing:5px;
+        }
+
+        .text-indent {
+        text-indent: 50px;
+        }
+
+        .word-spacing {
+        word-spacing:5px;
+        }
+
+        .line-height {
+        line-height: 1.8;
+        }
+
+        .row {
+        margin: 10px;
+        }
+
+    .btn-align-center {
+    text-align:center;
+    }
+
+    /* input field design */
+
+    .margin-left-50 {
+    margin-left:50px;
+
+    }
+
+    .mrgn-20 {
+       margin: 20px;
+    }
+
+    .margin-left-75 {
+        margin-left: 75px;
+     }
+
+     .text-align-center {
+        text-align: center;
+     }
+
+     .mrgn-left-12 {
+     margin-left: 12px;
+    }
+
+    .vertical-align-top {
+    vertical-align: top;
+    }
+
+    .margin-left-56 {
+    margin-left: 56px
+    }
+
+    .margin-left-59 {
+    margin-left: 59px
+    }
+
+    .margin-left-79 {
+    margin-left: 79px
+    }
+
+    .margin-left-83 {
+    margin-left: 83px
+    }
+
+    .padng-10 {
+    padding: 10px;
+    }
+
+    .margin-left-63 {
+    margin-left: 63px;
+    }
+
+    .margin-left-7 {
+    margin-left: 7px;
+    }
+
+    .margin-left-22 {
+    margin-left: 22px;
+    }
+
+    .margin-left-72 {
+    margin-left: 72px;
+    }
+
+    .margin-left-40 {
+    margin-left: 40px;
+    }
+
+    .margin-left-38 {
+    margin-left: 38px;
+    }
+
+    .padding-1 {
+    padding: 1.5px;
+    }
+
+    .width-36 {
+    width: 36%
+    }

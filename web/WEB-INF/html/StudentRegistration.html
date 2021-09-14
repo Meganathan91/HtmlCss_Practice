@@ -3,129 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <title>Student Registration</title>
-    <style>
-    #_h1 {
-    color: green;
-    text-align: center;
-    text-shadow: 10px 12px 5px green;
-    text-decoration: underline;
-    }
-    table, #_tr {
-    margin: auto;
-    background-color: lightblue;
-    border: 5px solid gray;
-    border-radius: 15px;
-    width: 40%;
-    }
-
-    td {
-    padding:5px;
-    }
-
-    #_lan {
-    border: 2px dashed gray;
-    border-radius: 15px;
-    }
-
-    input.button {
-    border: 2px solid red;
-    border-radius: 15px;
-    }
-
-
-    </style>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-<h1 id="_h1">Student Registration</h1>
+<h1 class="color-green text-align-center text-shadow-10-12-5-green text-decoration-underline">Student Registration</h1>
 <form>
-    <table>
-        <tr>
-            <td>First Name</td>
-            <td><input type="text" name="fname" placeholder="Enter First Name" maxlength="20" pattern="[a-zA-Z]+"
-                       required></td>
-        </tr>
+    <div class="margin-auto bg-lightgray border-5-solid-gray border-radius-15 width-38 height-460 padding-15">
+        <div class="row">
+            <label >First Name</label>
+            <input type="text" name="fname" placeholder="Enter First Name" maxlength="20" pattern="[a-zA-Z]+"
+                   required class="margin-left-38">
+        </div>
 
-        <tr>
-            <td>Last Name</td>
-            <td><input type="text" name="lname" placeholder="Enter Last Name" maxlength="20" pattern="[a-zA-Z]+"
-                       required></td>
-        </tr>
+        <div class="row">
+            <label>Last Name</label>
+            <input type="text" name="lname" placeholder="Enter Last Name" maxlength="20" pattern="[a-zA-Z]+"
+                   required class="margin-left-40">
+        </div>
 
-        <tr>
-            <td>Email</td>
-            <td><input type="email" name="email" placeholder="Enter Email" required></td>
-        </tr>
+        <div class="row">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter Email" required class="margin-left-72">
+        </div>
 
-        <tr>
-            <td>Date Of Birth</td>
-            <td><input type="date" name="birthday" required></td>
-        </tr>
+        <div class="row">
+            <label>Date Of Birth</label>
+            <input type="date" name="birthday" required class="margin-left-22">
+        </div>
 
-        <tr>
-            <td>Mobile Number</td>
-            <td><input type="tel" name="phonenumber"
-                       title="First three number start between ( 6-9 ) format [6-9]{3}[0-9]{3}[0-9]{4} and length of phonenumber 10 digits"
-                       placeholder="6781236789" pattern="[6-9]{3}[0-9]{3}[0-9]{4}" required></td>
-        </tr>
+        <div class="row">
+            <label>Mobile Number</label>
+            <input type="tel" name="phonenumber"
+                   title="First three number start between ( 6-9 ) format [6-9]{3}[0-9]{3}[0-9]{4} and length of phonenumber 10 digits"
+                   placeholder="6781236789" pattern="[6-9]{3}[0-9]{3}[0-9]{4}" required class="margin-left-7">
+        </div>
 
-        <tr>
-            <td>Gender</td>
-            <td><input type="radio" name="gender" value="male" required>Male
-                <input type="radio" name="gender" value="female">Female
-            </td>
-        </tr>
+        <div class="row">
+            <label>Gender</label>
+            <input type="radio" name="gender" value="male" required class="margin-left-63">Male
+            <input type="radio" name="gender" value="female" >Female
+        </div>
 
-        <tr>
-            <td>Language Known</td>
-            <td id="_lan"><input type="checkbox" name="tamil" required>Tamil<br>
-                <input type="checkbox" name="english">English<br>
-                <input type="checkbox" name="hindi">Hindi
-            </td>
-        </tr>
+        <div class="row">
+            <label>Language Known</label>
+            <input type="checkbox" name="tamil" >Tamil
+            <input type="checkbox" name="english" >English
+            <input type="checkbox" name="hindi" >Hindi
+        </div>
 
-        <tr>
-            <td>City</td>
-            <td>
-                <input list="scity" name="city" required>
-                <datalist id="scity">
-                    <option value="Ariyalur"></option>
-                    <option value="Jayankondam"></option>
-                    <option value="Perambalur"></option>
-                </datalist>
-            </td>
-        </tr>
+        <div class="row">
+            <label>City</label>
+            <select name="city" class="margin-left-83 padding-1 width-36">
+                <option>Select City</option>
+                <option>Ariyalur</option>
+                <option>Jayankondam</option>
+                <option>Perambalur</option>
+            </select>
+            <br>
+        </div>
 
-        <tr>
-            <td>State</td>
-            <td><input type="text" name="state" placeholder="Enter Your State" maxlength="10" pattern="[a-zA-Z]+"
-                       required></td>
-        </tr>
+        <div class="row">
+            <label>State</label>
+            <input type="text" name="state" placeholder="Enter Your State" maxlength="10" pattern="[a-zA-Z]+"
+                   required class="margin-left-79">
+        </div>
 
-        <tr>
-            <td>Country</td>
-            <td><input type="text" name="country" placeholder="Enter Your Country" maxlength="10" pattern="[a-zA-Z]+"
-                       required></td>
-        </tr>
+        <div class="row">
+            <label>Country</label>
+            <input type="text" name="country" placeholder="Enter Your Country" maxlength="10" pattern="[a-zA-Z]+"
+                   required class="margin-left-59">
+        </div>
 
-        <tr>
-            <td>PinCode</td>
-            <td><input type="text" name="pincode" placeholder="Enter PinCode" pattern="[0-9]{6}" required></td>
-        </tr>
+        <div class="row">
+            <label>PinCode</label>
+            <input type="text" name="pincode" placeholder="Enter PinCode" pattern="[0-9]{6}" required class="margin-left-56">
+        </div>
 
-        <tr>
-            <td>Student Details</td>
-            <td><textarea name="details" cols="50" rows="5" maxlength="100" required></textarea></td>
-        </tr>
+        <div class="row">
+            <label class="vertical-align-top">Student Details</label>
+            <textarea name="details" cols="50" rows="5" maxlength="100" required class="mrgn-left-12"></textarea>
+        </div>
 
-        <tr>
-            <td class="button" colspan="2" align="center">
-                <input type="submit" value="Submit" class="button">
-                <input type="reset" value="Reset" class="button">
-            </td>
-        </tr>
-
-
-    </table>
+        <div class="btn-align-center">
+            <input type="reset" value="Reset" class="border-2-solid-red border-radius-15" >
+            <input type="submit" value="Submit" class="border-2-solid-red border-radius-15" >
+        </div>
+    </div>
 </form>
 </body>
 </html>
