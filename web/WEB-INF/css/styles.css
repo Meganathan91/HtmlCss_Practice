@@ -92,9 +92,6 @@
         }
 
         /* css set height and width for element */
-        .margin-auto {
-        margin: auto;
-        }
 
         .margin-75 {
         margin: 75px;
@@ -272,5 +269,55 @@
     }
 
     .width-36 {
-    width: 36%
+        width: 36%
     }
+
+     /* jquery demo */
+
+   .display-block {
+   display: block;
+   }
+
+   .dsply-inln {
+   display: inline;
+   }
+
+   .margin-left-20 {
+        margin-left: 20px;
+   }
+
+   .flip,.panel {
+    padding: 5px;
+    background-color: pink;
+    text-align: center;
+    border: 2px solid yellow;
+   }
+
+   .panel {
+   padding: 30px;
+   display: none;
+   }
+
+   .margin-20 {
+   margin: 20px;
+   }
+
+   .bg-clr-yellow {
+   background-color: yellow;
+   }
+
+   .bg-clr-litblu {
+      background-color: lightblue;
+   }
+
+   .bg-clr-pink {
+      background-color: pink;
+   }
+
+   .dsply-none {
+   display: none;
+   }
+
+   .mrgn-left-20 {
+   margin-left: 20px;
+   }

@@ -8,19 +8,56 @@
   <link href="../css/styles.css" rel="stylesheet">
 </head>
 <body>
-<div class="text-align-center">
+<div>
 <h1 id="h">My First Jquery Events Example</h1>
 <div class="mrgn-20">
     <label>FName</label>
-    <input type="text" id="fname">
+    <input type="text" id="fname" class="display-block">
 </div>
 <div class="mrgn-20">
     <label>LName</label>
-    <input type="text" id="lname">
+    <input type="text" id="lname" class="display-block">
 </div>
 <div>
-    <button id="btn">Click Me</button>
+    <button id="btn" class="margin-left-20">Click Me</button>
 </div>
 </div>
+
+<div id="effect" class="dsply-none">
+    <h1>Mouse Events</h1>
+    <p></p>
+    <span> </span> Number of times key pressed
+</div>
+
+<!--  jquery fade effect -->
+<div class="margin-20">
+<div id="div_1" class="bg-clr-yellow dsply-none">fadeIn</div>
+<div id="div_2" class="bg-clr-litblu dsply-none">fadeIn speed parameter specifies</div>
+<div id="div_3" class="bg-clr-pink dsply-none">fadeIn speed parameter specifies milliseconds</div>
+</div>
+
+<div class="margin-20">
+<div id="div_4" class="bg-clr-yellow">fadeOut</div>
+<div id="div_5" class="bg-clr-litblu">fadeOut speed parameter specifies</div>
+<div id="div_6" class="bg-clr-pink">fadeOut speed parameter specifies milliseconds</div>
+</div>
+
+<div class="margin-20">
+<div id="div_7" class="bg-clr-yellow">fadeTo</div>
+<div id="div_8" class="bg-clr-litblu">fadeTo speed parameter specifies</div>
+<div id="div_9" class="bg-clr-pink">fadeTo given opacity (value between 0 and 1)</div>
+</div>
+
+<!--jquery slide effect create panel-->
+<button class="mrgn-left-20" id="stop_effect">StopEffect</button>
+
+<div id="div_10" class="flip margin-20">slide effect</div>
+<div id="div_11" class="panel margin-20">slideDown effect</div>
+
+<!--jquery callback effect -->
+
+<button id="calbk-eft" class="margin-20">callback</button>
+<h1 id="h_1">callback effect</h1>
+
 </body>
 </html>
