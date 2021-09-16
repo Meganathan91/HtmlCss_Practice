@@ -52,12 +52,12 @@
     background-color: lightGray;
     }
 
-        .border-5-solid-blue {
-        border:5px solid blue;
+        .border-2-solid-blue {
+        border:2px solid blue;
         }
 
-        .border-3-black {
-        border:3px black; /* we can define border style color width in single line like this */
+        .border-3-solid-black {
+        border:3px solid black; /* we can define border style color width in single line like this */
         }
 
         .border-bottom-solid {
@@ -86,8 +86,7 @@
 
         /* padding create space inside of defined border */
 
-        .border-10-dotted-red {
-        border: 10px dotted red;
+        .padng {
         padding: 20px;
         }
 
@@ -105,7 +104,6 @@
         }
 
         /*  css box model with outline with offset example  */
-
 
         .m-25 {
             margin: 25px;
@@ -135,6 +133,14 @@
 
         .text-color-blue {
         color: blue;
+        }
+
+        .txt-align-center {
+            text-align: center;
+        }
+
+        .txt-align-right {
+            text-align: right;
         }
 
         .text-align-right {
@@ -315,9 +321,78 @@
    }
 
    .dsply-none {
-   display: none;
+        display: none;
    }
 
    .mrgn-left-20 {
-   margin-left: 20px;
+        margin-left: 20px;
    }
+
+   .txt-intnt {
+        text-indent: 50px;
+   }f
+
+  .height-250 {
+    height: 250px;
+  }
+
+  .width-100 {
+    width: 100%;
+  }
+
+  input{
+      height: 10px;
+      padding: 5px;
+  }
+
+  .float-rt {
+  float: right;
+  }
+
+  .float-lt {
+    float: left;
+  }
+
+  .mrgn-rt-15 {
+    margin-right: 15px;
+  }
+
+  .mrgn-auto {
+    margin: auto;
+  }
+
+  .ht-140 {
+  height: 140px;
+  }
+
+  .wd-30 {
+    width: 30%;
+  }
+
+  .padng-18-5-27-20 {
+    padding: 18px 5px 27px 20px;
+  }
+
+  .mrgn-10-0-10-0 {
+    margin: 10px 0px 10px 0px;
+  }
+
+  .clr-wt {
+    color: white
+  }
+
+  .bg-clr-blu {
+    background-color: blue;
+  }
+
+  .mrgn-tp-4{
+    margin-top: 4px;
+  }
+
+  .mrgn-rt-14 {
+    margin-right: 14px;
+  }
+
+  .mrgn-btm {
+    margin-bottom: 4px;
+  }

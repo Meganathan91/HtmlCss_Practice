@@ -3,61 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <title>Jquery</title>
-  <script src="../js/jquery.min.js"></script>
-  <script src="../js/jquerydemo.js"></script>
-  <link href="../css/styles.css" rel="stylesheet">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquerydemo.js"></script>
+    <link href="../css/styles.css" rel="stylesheet">
 </head>
-<body>
-<div>
-<h1 id="h">My First Jquery Events Example</h1>
-<div class="mrgn-20">
-    <label>FName</label>
-    <input type="text" id="fname" class="display-block">
+<body class="mrgn-20">
+<h1 id="h" class="txt-align-center">My First Jquery Events Example</h1>
+<div class="border-3-solid-black border-radius-15 mrgn-auto ht-140 wd-30 padng-18-5-27-20">
+    <div class="float-lt">
+        <label>FirstName</label>
+        <input type="text" id="fname" class="display-block mrgn-10-0-10-0" placeholder="Enter First Name">
+    </div>
+    <div class="float-rt mrgn-rt-15">
+        <label>LastName</label>
+        <input type="text" id="lname" class="display-block mrgn-10-0-10-0" placeholder="Enter Last Name">
+    </div>
+    <div class="float-lt">
+        <label>Email</label>
+        <input type="text" id="email" class="display-block mrgn-10-0-10-0" placeholder="Enter Email">
+    </div>
+    <div class="float-rt mrgn-rt-15">
+        <label>Phone Number</label>
+        <input type="text" id="phn" class="display-block mrgn-10-0-10-0" placeholder="Enter PhoneNumber">
+    </div>
+    <div class="txt-align-center">
+        <button id="btn" class="clr-wt bg-clr-blu mrgn-tp-4 mrgn-rt-14 mrgn-btm-4">Click Me</button>
+    </div>
 </div>
-<div class="mrgn-20">
-    <label>LName</label>
-    <input type="text" id="lname" class="display-block">
-</div>
-<div>
-    <button id="btn" class="margin-left-20">Click Me</button>
-</div>
-</div>
-
-<div id="effect" class="dsply-none">
-    <h1>Mouse Events</h1>
+<div id="effect">
+    <h1 id="mouse">Mouse Events</h1>
     <p></p>
-    <span> </span> Number of times key pressed
+    <span id="key_press"> </span> Number of times key pressed
 </div>
-
 <!--  jquery fade effect -->
-<div class="margin-20">
-<div id="div_1" class="bg-clr-yellow dsply-none">fadeIn</div>
-<div id="div_2" class="bg-clr-litblu dsply-none">fadeIn speed parameter specifies</div>
-<div id="div_3" class="bg-clr-pink dsply-none">fadeIn speed parameter specifies milliseconds</div>
+<div>
+    <div id="div_1" class="bg-clr-yellow dsply-none padng">fadeIn</div>
+    <div id="div_2" class="bg-clr-litblu dsply-none padng txt-align-center">fadeIn speed parameter specifies</div>
+    <div id="div_3" class="bg-clr-pink dsply-none padng txt-align-right">fadeIn speed parameter specifies milliseconds</div>
 </div>
-
-<div class="margin-20">
-<div id="div_4" class="bg-clr-yellow">fadeOut</div>
-<div id="div_5" class="bg-clr-litblu">fadeOut speed parameter specifies</div>
-<div id="div_6" class="bg-clr-pink">fadeOut speed parameter specifies milliseconds</div>
+<div>
+    <div id="div_4" class="bg-clr-yellow padng">fadeOut</div>
+    <div id="div_5" class="bg-clr-litblu padng txt-align-center">fadeOut speed parameter specifies</div>
+    <div id="div_6" class="bg-clr-pink padng txt-align-right">fadeOut speed parameter specifies milliseconds</div>
 </div>
-
-<div class="margin-20">
-<div id="div_7" class="bg-clr-yellow">fadeTo</div>
-<div id="div_8" class="bg-clr-litblu">fadeTo speed parameter specifies</div>
-<div id="div_9" class="bg-clr-pink">fadeTo given opacity (value between 0 and 1)</div>
+<div>
+    <div id="div_7" class="bg-clr-yellow padng">fadeTo</div>
+    <div id="div_8" class="bg-clr-litblu padng txt-align-center">fadeTo speed parameter specifies</div>
+    <div id="div_9" class="bg-clr-pink padng txt-align-right">fadeTo given opacity (value between 0 and 1)</div>
 </div>
+<button class="mrgn-left-20 mrgn-20" id="fade_effect">Fade Effect</button>
 
 <!--jquery slide effect create panel-->
-<button class="mrgn-left-20" id="stop_effect">StopEffect</button>
-
+<button class="mrgn-left-20" id="stop_effect">Stop Effect</button>
 <div id="div_10" class="flip margin-20">slide effect</div>
 <div id="div_11" class="panel margin-20">slideDown effect</div>
 
 <!--jquery callback effect -->
-
 <button id="calbk-eft" class="margin-20">callback</button>
 <h1 id="h_1">callback effect</h1>
+
+<!--  jquery html : text() -->
+<p id="p_1" class="txt-intnt"> W3School website easy to learn <b> jQuery </b> tutorial </p>
+<span>
+      <label>Name</label>
+      <input type="text" id="name" value="rahim">
+</span>
+<a href="https://www.google.com/" title="original title">https://www.google.com/</a>
+<button id="btn_1" class="display-block mrgn-20">Html</button>
+<p id="p_2">jquery set content and set attribute</p>
+<p id="p_3">jquery set content and set attribute</p>
+<button id="btn_2" class="display-block mrgn-20">HtmlSet</button>
+
+<!--  jquery html : add -->
+
+<i id="p_4">jquery html: </i>
+<input type="text" id="txt_1">
+<button id="btn_3" onclick="add()">Add</button>
+<span></span>
+<div>
+    <img src="../image/html.jpeg" id="img_1" class="mrgn-20">
+</div>
+<span >
+<button id="btn_4">Before</button>
+<button id="btn_5">After</button>
+</span>
+
+<!--  jquery html : remove -->
+<div id="div_12" class="bg-clr-yellow height-250 width-100">
+    <h3 class="txt-intnt">remove using tag</h3>
+    <p id="p_5" class="txt-intnt">jquery html remove parent and child</p>
+    <p id="p_6" class="txt-intnt">jquery html empty remove only child</p>
+    <p id="p_7" class="txt-intnt">jquery html filter using p tag id with remove method</p>
+</div>
+<div>
+    <button id="btn_6">Remove</button>
+    <button id="btn_7">Empty</button>
+    <button id="btn_8">Remove with filter</button>
+</div>
+
+<!--  jquery html : add classes -->
+<div id="div_13">
+    <p>jquery html add class</p>
+</div>
+<div>
+    <button id="btn_9">add class</button>
+    <button id="btn_10">remove class</button>
+    <button id="btn_11">toggle class</button>
+</div>
+
+<!--  jquery html : css() method -->
+<p id="p_8">jquery html give style using css for html element</p>
 
 </body>
 </html>

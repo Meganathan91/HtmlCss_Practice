@@ -1,144 +1,211 @@
-$("document").ready(function(){
-        var x = 0;
-        $("#btn").click(function(){
-            $("#h").hide();
-        });
-
-        $("#fname, #lname").click(function(){
-            console.log("click");
-        });
-
-        $("#lname,#fname").focus(function(){
-            console.log("focus");
-        });
-
-        $("#h").on("click",function(){
-            alert("on and off event");
-        });
-
-        $("#btn").click(function(){
-            $("#h").off("click");
-        });
-
-        $("#fname").focusin(function(){
-                    $(this).css("background-color","orange");
-        });
-
-        $("#fname").focusout(function(){
-                    $(this).css("background-color","green");
-        });
-
-        $("#fname").blur(function(){
-                    $(this).css("background-color","red");
-        });
-
-        $("#fname").focus(function(){
-            $(this).css("background-color","green");
-        });
-
-        $("#btn").click(function(){
-            alert("click event");
-        });
-
-        $("#fname").change(function(){
-            //$(this).css("background-color","red");
-            alert("change event");
-        });
-
-        $("#fname").dblclick(function(){
-            // $(this).css("background-color","blue");
-            alert("selected name input field");
-        });
-
-        $("#fname").hover(function(){
-                $(this).css("background-color","blue");
-                },
-             function(){
-           $(this).css("background-color","pink");
-        });
-
-        $("#mouse").mousedown(function(){
-            $("p").text("Mouse down Event");
-        });
-
-        $("#mouse").mouseup(function(){
-            $("p").text("Mouse up Event");
-        });
-
-        $("#mouse").mouseenter(function(){
-            $("p").text("Mouse enter Event");  // mouseover
-        });
-
-        $("#mouse").mouseleave(function(){     // mouseout
-            $("p").text("Mouse leave Event");
-        });
-
-        /* key event */
-
-        $("#fname").keydown(function(){
-            console.log("keydown");
-        });
-
-        $("#fname").keyup(function(){
-            console.log("keyup");
-        });
-
-        $("#lname").keypress(function(){
-            $("span").text(x += 1);
-       });
-
-          /* jquery effects */
-
-       $("#btn").click(function(){
-            $("#effect").show();
-       });
-
-      $("#btn").click(function(){
-            $("img").toggle();
-      });
-
-     $("#btn").click(function(){
-           $("#div_1").fadeIn();
-           $("#div_2").fadeIn("slow");      // here replace fadeIn by toggle and see the result
-           $("#div_3").fadeIn(3000);
-     });
-
-    $("#btn").click(function(){
-           $("#div_4").fadeOut();
-           $("#div_5").fadeOut("slow");
-           $("#div_6").fadeOut(3000);
-     });
-
-    $("#btn").click(function(){
-           $("#div_7").fadeTo("slow",0.5);
-           $("#div_8").fadeTo("slow",0.3);
-           $("#div_9").fadeTo("slow",0.8);
+$("document").ready(function() {
+    var x = 0;
+    $("#btn").click(function() {
+        $("#h").toggle();
     });
-
-        /* jquery slide effect */
-
-    $("#div_10").click(function(){
+    $("#fname").click(function() {
+        console.log("click");
+    });
+    $("#lname").focus(function() {
+        console.log("focus");
+    });
+    $("#h").on("click", function() {
+        alert("on and off event");
+    });
+    $("#btn").click(function() {
+        $("#h").off("click");
+    });
+    $("#lname").focusin(function() {
+        $(this).css("background-color", "orange");
+    });
+    $("#lname").focusout(function() {
+        $(this).css("background-color", "green");
+    });
+    $("#fname").blur(function() {
+        $(this).css("background-color", "red");
+    });
+    /*$("#fname").focus(function() {
+        $(this).css("background-color", "green");
+    });*/
+    $("#btn").click(function() {
+        alert("click event");
+    });
+    $("#fname").change(function() {
+        //$(this).css("background-color","red");
+        alert("change event");
+    });
+    $("#fname").dblclick(function() {
+        // $(this).css("background-color","blue");
+        alert("selected name input field");
+    });
+    $("#fname").hover(function() {
+        $(this).css("background-color", "blue");
+    }, function() {
+        $(this).css("background-color", "pink");
+    });
+    $("#mouse").mousedown(function() {
+        $("p").text("Mouse down Event");
+    });
+    $("#mouse").mouseup(function() {
+        $("p").html("<b>Mouse up Event bold style</b>");
+    });
+    $("#mouse").mouseenter(function() {
+        $("p").html("<i>Mouse enter Event italic</i>");
+        // mouseover
+    });
+    $("#mouse").mouseleave(function() {
+        // mouseout
+        $("p").text("Mouse leave Event");
+    });
+    /* key event */
+    $("#fname").keydown(function() {
+        console.log("keydown");
+    });
+    $("#fname").keyup(function() {
+        console.log("keyup");
+    });
+    $("#lname").keypress(function() {
+        $("span").text(x += 1);
+    });
+    /* jquery effects */
+    $("#btn").click(function() {
+        $("#effect").show();
+    });
+    $("#btn").click(function() {
+        $("img").toggle();
+    });
+    $("#fade_effect").click(function() {
+        $("#div_1").fadeIn();
+        $("#div_2").fadeIn("slow");
+        $("#div_3").fadeIn(2000);
+        // here replace fadeIn by toggle and see the result $("#div_3").fadeIn(3000);
+    });
+    $("#fade_effect").click(function() {
+        $("#div_4").fadeOut();
+        $("#div_5").fadeOut("slow");
+        $("#div_6").fadeOut(3000);
+    });
+    $("#fade_effect").click(function() {
+        $("#div_7").fadeTo("slow", 0.5);
+        $("#div_8").fadeTo("slow", 0.3);
+        $("#div_9").fadeTo("slow", 0.8);
+    });
+    /* jquery slide effect */
+    $("#div_10").click(function() {
         $("#div_11").slideDown(3000);
     });
-
-        /* jquery slide stop effect */
-
-    $("#stop_effect").click(function(){
+    /* jquery slide stop effect */
+    $("#stop_effect").click(function() {
         $("#div_11").stop();
     });
-
-            /* jquery callback effect */
-
-    $("#calbk-eft").click(function(){
-        $("#h_1").toggle(3000,function(){
+    /* jquery callback effect */
+    $("#calbk-eft").click(function() {
+        $("#h_1").toggle(3000, function() {
             alert("callback effect");
         });
     });
+    /* jquery chaining effect */
+    $("#calbk-eft").click(function() {
+        $("#h_1").css("color", "red").slideUp(1000).slideDown(2000);
+    });
+    /* jQuery html : get text() */
+    $("#btn_1").click(function() {
+        alert($("#p_1").text());
+    });
+    /* jQuery html : get val() */
+    $("#btn_1").click(function() {
+        console.log($("#name").val());
+    });
+    /* jquery get attr() */
+    $("#btn_1").click(function() {
+        console.log($("a").attr("title"));
+    });
+    /* jquery set: text() */
+    $("#btn_2").click(function() {
+        console.log($("#p_2").text("set html content"));
+    });
+    /* jquery set: html() */
+    $("#btn_2").click(function() {
+        $("#p_3").html("<i> set html content </i>");
+    });
+    /* jquery set: val() */
+    $("#btn_2").click(function() {
+        $("#name").val("mani");
+    });
+    /* jquery set value for href and title tag using attr() */
+    $("a").click(function() {
+        $("a").attr({
+            "href": "https://www.megas.com/",
+            "title": "new title"
+        });
+    });
 
-                /* jquery chaining effect */
+    /* jquery html: add */
 
-    $("#calbk-eft").click(function(){
-            $("#h_1").css("color","red").slideUp(1000).slideDown(2000);
+    $("#btn_3").click(function(){
+        $("#p_4").append("<b>Name</b> ");
+    });
+
+    $("#btn_3").click(function(){
+         $("#p_4").prepend(" <i>w3school</i> ");
+    });
+
+    $("#btn_3").click(function(){
+         $("#txt_1").before("<b>Name</b> ");
+    });
+
+    $("#btn_3").click(function(){
+         $("#txt_1").after(" <button>Reset</button> ");
+    });
+
+    $("#btn_4").click(function(){
+         $("#img_1").before("<b>html</b> ");
+    });
+
+    $("#btn_5").click(function(){
+         $("#img_1").after("<i>image</i>");
+    });
+
+    /* jquery html: remove and empty */
+
+    $("#btn_6").click(function(){
+         $("#div_12").remove();        // remove: remove parent and child element.
+    });
+
+    $("#btn_7").click(function(){
+         $("p").empty();               // empty remove only child element.
+    });
+
+    $("#btn_8").click(function(){
+        $("p").remove("#p_5, #p_6");    // remove with filter using paragraph tag id.
+    });
+
+        /* jquery html: add classes, removeClass and toggleClass */
+
+    $("#btn_9").click(function(){
+        $("#div_13").addClass("border-5-solid-green padding-15");
+    });
+
+    $("#btn_10").click(function(){
+        $("#div_13").removeClass();
+    });
+
+    $("#btn_11").click(function(){
+        $("#div_13").toggleClass("bg-color-lightGray padding-15");
+    });
+
+        /* jquery html: css() method */
+
+    $("#p_8").mouseenter(function(){
+        $(this).css({"background-color":"red","text-align":"center"});
     });
 
 });
+
+function add() {
+    let text1 = "<p><b> html add append </b></p>";
+    let text2 = $("<p></p>").text("append text");
+    let text3 = document.createElement("p");
+    text3.innerHTML = "jquery";
+    $("#p_4").append(text1,text2,text3); // here change append by prepend content added beginning
+    }
