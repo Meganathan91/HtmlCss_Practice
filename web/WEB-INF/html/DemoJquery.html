@@ -32,24 +32,24 @@
 </div>
 <div id="effect">
     <h1 id="mouse">Mouse Events</h1>
-    <p></p>
+    <p id="mouse_1"></p>
     <span id="key_press"> </span> Number of times key pressed
 </div>
 <!--  jquery fade effect -->
-<div>
+<div class="mrgn-20">
     <div id="div_1" class="bg-clr-yellow dsply-none padng">fadeIn</div>
-    <div id="div_2" class="bg-clr-litblu dsply-none padng txt-align-center">fadeIn speed parameter specifies</div>
-    <div id="div_3" class="bg-clr-pink dsply-none padng txt-align-right">fadeIn speed parameter specifies milliseconds</div>
+    <div id="div_2" class="bg-clr-litblu dsply-none padng txt-align-center mrgn-tp-5">fadeIn speed parameter specifies</div>
+    <div id="div_3" class="bg-clr-pink dsply-none padng txt-align-right mrgn-tp-5">fadeIn speed parameter specifies milliseconds</div>
 </div>
-<div>
+<div class="mrgn-20">
     <div id="div_4" class="bg-clr-yellow padng">fadeOut</div>
-    <div id="div_5" class="bg-clr-litblu padng txt-align-center">fadeOut speed parameter specifies</div>
-    <div id="div_6" class="bg-clr-pink padng txt-align-right">fadeOut speed parameter specifies milliseconds</div>
+    <div id="div_5" class="bg-clr-litblu padng txt-align-center mrgn-tp-5">fadeOut speed parameter specifies</div>
+    <div id="div_6" class="bg-clr-pink padng txt-align-right mrgn-tp-5">fadeOut speed parameter specifies milliseconds</div>
 </div>
-<div>
+<div class="mrgn-20">
     <div id="div_7" class="bg-clr-yellow padng">fadeTo</div>
-    <div id="div_8" class="bg-clr-litblu padng txt-align-center">fadeTo speed parameter specifies</div>
-    <div id="div_9" class="bg-clr-pink padng txt-align-right">fadeTo given opacity (value between 0 and 1)</div>
+    <div id="div_8" class="bg-clr-litblu padng txt-align-center mrgn-tp-5">fadeTo speed parameter specifies</div>
+    <div id="div_9" class="bg-clr-pink padng txt-align-right mrgn-tp-5">fadeTo given opacity (value between 0 and 1)</div>
 </div>
 <button class="mrgn-left-20 mrgn-20" id="fade_effect">Fade Effect</button>
 
@@ -114,5 +114,59 @@
 <!--  jquery html : css() method -->
 <p id="p_8">jquery html give style using css for html element</p>
 
+<!--  jquery traversing Ancestors-->
+<h2 class="txt-align-center">jQuery Traversing Methods</h2>
+<div class="txt-align-center mrgn-20">
+    <button id="btn_12">Ancestors</button>
+    <button id="btn_13">Children</button>
+    <button id="btn_16">Find</button>
+</div>
+<div id="div_14" class="ancestors">
+    <div id="div_15">great-grand parent
+            <ul id="ul_1">grant parent
+                    <li id="li_1">parent
+                        <span id="span_1">child</span>
+                    </li>
+            </ul>
+    </div>
+</div>
+
+<!--  jquery traversing Siblings methods-->
+<div class="float-lt mrgn-left-12">
+<h2 class="txt-align-center">jQuery Siblings prev Methods</h2>
+<div class="txt-align-center mrgn-20">
+    <button id="btn_14">Siblings</button>
+    <button id="btn_15">prev</button>
+    <button id="btn_17">prevAll</button>
+    <button id="btn_18">prevUntil</button>
+</div>
+</div>
+<div class="float-rt mrgn-rt-14">
+<h2 class="txt-align-center">jQuery Siblings next Methods</h2>
+<div class="txt-align-center mrgn-20">
+    <button id="btn_19">next</button>
+    <button id="btn_20">nextAll</button>
+    <button id="btn_21">nextUntil</button>
+</div>
+</div>
+<div class="txt-align-center mrgn-20">
+<p id="p_12">Paragraph_12 siblings index(9)</p>
+<p id="p_9">Paragraph_9 next index(10)</p>
+<h3 id="h_2">Heading_2 nextAll</h3>
+<p id="p_10">Paragraph_10 nextUntil index(11)</p>
+<h3 id="h_3">Heading_3 prev</h3>
+<p id="p_11">Paragraph_11 prevAll index(12)</p>
+<h3 id="h_4">Heading_4 prevUntil</h3>
+</div>
+
+<!--  jquery traversing filtering methods-->
+<h2 class="txt-align-center clr-rng">jQuery Filtering Methods</h2>
+<div class="txt-align-center mrgn-20">
+    <button id="btn_22">First</button>
+    <button id="btn_23">Last</button>
+    <button id="btn_24">Equal</button>
+    <button id="btn_25">Not</button>
+    <button id="btn_26">Filter</button>
+</div>
 </body>
 </html>

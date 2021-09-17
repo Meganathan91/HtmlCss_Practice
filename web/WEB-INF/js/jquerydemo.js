@@ -44,18 +44,18 @@ $("document").ready(function() {
         $(this).css("background-color", "pink");
     });
     $("#mouse").mousedown(function() {
-        $("p").text("Mouse down Event");
+        $("#mouse_1").text("Mouse down Event");
     });
     $("#mouse").mouseup(function() {
-        $("p").html("<b>Mouse up Event bold style</b>");
+        $("#mouse_1").html("<b>Mouse up Event bold style</b>");
     });
     $("#mouse").mouseenter(function() {
-        $("p").html("<i>Mouse enter Event italic</i>");
+        $("#mouse_1").html("<i>Mouse enter Event italic</i>");
         // mouseover
     });
     $("#mouse").mouseleave(function() {
         // mouseout
-        $("p").text("Mouse leave Event");
+        $("#mouse_1").text("Mouse leave Event");
     });
     /* key event */
     $("#fname").keydown(function() {
@@ -198,6 +198,76 @@ $("document").ready(function() {
 
     $("#p_8").mouseenter(function(){
         $(this).css({"background-color":"red","text-align":"center"});
+    });
+
+         /* jquery traversing ancestors methods parent, parents and parentsUntil*/
+
+    $("#btn_12").click(function(){
+        $("#span_1").parentsUntil("#div_15").css({"color": "red", "border": "2px solid red"});
+    });
+
+         /* jquery traversing Descendants methods children and find */
+
+    $("#btn_13").click(function(){
+        $("#div_14").children().css({"color":"blue"});
+    });
+
+    $("#btn_16").click(function(){
+        $("#div_14").find("#ul_1, #li_1").css({"border": "2px solid yellow"});
+    });
+
+         /* jquery traversing siblings methods */
+
+    $("#btn_14").click(function(){
+        $("#p_12").siblings().css({"color":"red"});
+    });
+
+    $("#btn_15").click(function(){
+        $("#h_3").prev().css({"color":"blue"});
+    });
+
+    $("#btn_17").click(function(){
+        $("#h_2").prevAll().css({"color":"orange"});
+    });
+
+    $("#btn_18").click(function(){
+        $("#h_4").prevUntil("#h_2").css({"color":"yellow"});
+    });
+
+    $("#btn_19").click(function(){
+        $("#h_3").next().css({"color":"blue"});
+    });
+
+    $("#btn_20").click(function(){
+        $("#h_2").nextAll().css({"color":"orange"});
+    });
+
+    $("#btn_21").click(function(){
+        $("#p_12").nextUntil("#p_10").css({"color":"yellow"});
+    });
+
+             /* jquery traversing filtering methods */
+
+    $("#btn_22").click(function(){
+       $("p").first().css({"color":"blue"});
+    });
+
+    $("#btn_23").click(function(){
+       $("p").last().css({"color":"blue"});
+    });
+
+    $("#btn_24").click(function(){
+       $("p").eq(9).css({"color":"red"});
+    });
+
+    // suppose here input id not having all p element selected and applied the style. example #p_30 not id all p element selected style.
+
+    $("#btn_25").click(function(){
+       $("p").not("#p_11").css({"color":"lightblue"});
+    });
+
+    $("#btn_26").click(function(){
+       $("p").filter("#p_9, #p_10").css({"color": "Violet"});
     });
 
 });

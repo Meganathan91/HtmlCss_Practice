@@ -385,8 +385,12 @@
     background-color: blue;
   }
 
-  .mrgn-tp-4{
+  .mrgn-tp-4 {
     margin-top: 4px;
+  }
+
+  .mrgn-tp-5 {
+    margin-top: 5px;
   }
 
   .mrgn-rt-14 {
@@ -395,4 +399,35 @@
 
   .mrgn-btm {
     margin-bottom: 4px;
+  }
+
+  .fnt-sz-20 {
+    font-size: 20px;
+  }
+
+  .lin-ht-1 {
+    line-height: 0.5;
+  }
+
+  .height-200 {
+    height: 200px;
+  }
+
+  .pdng-5 {
+    padding: 5px;
+  }
+
+  .ancestors *{
+    border: 2px solid green;
+    padding: 5px;
+    margin: 15px;
+    display: block;
+  }
+
+  .mrgn-tp-10{
+    margin-top: 10px;
+  }
+
+  .clr-rng {
+    color:orange;
   }
