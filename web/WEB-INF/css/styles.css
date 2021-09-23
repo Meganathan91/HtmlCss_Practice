@@ -1,0 +1,161 @@
+
+.error {
+  color: #ff0000;
+}
+
+.errors {
+    position: absolute;
+    top: -110%;
+    left: 31%;
+    padding: 1% 20%;
+    border-radius: 3px;
+    color: red;
+    display: none;
+}
+
+.wd-300 {
+    width: 300px;
+}
+
+.mrgn-auto {
+    margin: auto
+}
+
+.border-2-solid-gray {
+    border: 2px solid gray;
+}
+
+.d-flex{
+    display:flex;
+}
+
+.bdr-rads-12 {
+    border-radius: 12px;
+}
+
+.txt-align-cntr {
+    text-align: center;
+}
+
+label {
+    margin-right: 30px;
+}
+
+.dsply-blk {
+    display: block;
+}
+
+.padng-20 {
+    padding: 20px;
+}
+
+.pdng-4 {
+    padding: 4px;
+}
+
+.pdng-5 {
+    padding: 5px;
+}
+
+.float-rt {
+    float: right;
+}
+
+.float-lft {
+    float: left;
+}
+
+.wd {
+    width: 23%;
+}
+
+.wd-60 {
+    width: 60%;
+}
+.ht {
+    height: 250px;
+}
+
+.lin-ht-200 {
+    line-height: 200%;
+}
+
+.padng-25 {
+    padding: 25px;
+}
+
+.ht-100 {
+    height: 100px;
+}
+
+.mrgn-btm-20 {
+    margin-bottom: 20px;
+}
+
+.padng-5 {
+    padding: 5px;
+}
+
+.ln-ht-45 {
+    line-height: 45px;
+}
+
+.mrgn-tp-15 {
+    margin-top: 15px;
+}
+
+.padng-10 {
+    padding: 10px;
+}
+
+.wd-30 {
+    width: 30%;
+}
+
+.wd-50 {
+    width: 50%;
+}
+
+.ht-400 {
+    height: 400px;
+}
+
+.mrgn-btm-40 {
+    margin-bottom: 40px;
+}
+
+.clr-blu {
+    color: blue;
+}
+
+.wd-45 {
+   width: 45%;
+}
+
+.wd-96 {
+    width: 96%;
+}
+
+.fnt-sz-13 {
+    font-size: 13px;
+}
+
+.ht-450 {
+    height: 450px;
+}
+
+.mrgn-top-0 {
+    margin-top: -12px;
+}
+
+.ht-130 {
+    height: 130px;
+}
+
+.pd-r-10{
+    padding-right: 10px;
+}
+
+.pd-r-20{
+    padding-right: 20px;
+}
