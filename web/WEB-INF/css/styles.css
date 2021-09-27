@@ -1,16 +1,144 @@
 
-.error {
-  color: #ff0000;
+    /* signup form design */
+
+.container {
+      margin: auto;
+      border-radius: 0px;
+      background-color: #E6E6FA;
+      padding: 10px;
+      width: 50%;
+  }
+
+.icon {
+      width: 15px;
+      padding: 8px 10px;
+      margin: 10px 0px;
+      color: dodgerblue;
+      border: 2px solid dodgerblue;
 }
 
-.errors {
+  .input-field {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px 10px;
+    margin: 10px 0px;
+  }
+
+ .input-field:focus {
+    border: 2px solid dodgerblue;
+ }
+
+ input[type=radio] {
+    width: 30px;
+    transform: scale(1.2);
+ }
+
+  .btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 14px 0px;
+    margin: 10px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+  }
+
+  .txt-decor-nn {
+    text-decoration: none;
+  }
+
+.btn:hover {
+    opacity: 1;
+}
+
+.row {
+    display: flex;
+}
+
+.clm {
+  width: 100%;
+  margin: 10px 5px;
+}
+
+.pos-tp-5 {
+    position: sticky;
+    top: 5px;
+}
+
+.mr-bt-10 {
+    margin-bottom: 10px;
+}
+
+.mr-15-0 {
+    margin: 15px 0px;
+}
+
+.ln-img {
+
+}
+
+.login-cont {
+    background-color: #E6E6FA;
+    margin: auto;
+    width: 30%;
+    padding: 15px;
+}
+
+.ln-fld-icon {
+    text-align: center;
+    width: 20px;
+    padding: 8px 10px;
+    margin: 10px 0px;
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+}
+
+.ln-icon {
+    text-align: center;
+    padding: 8px 10px;
+    margin: 10px 0px;
+    color: dodgerblue;
+}
+
+.ln-input-fld {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    margin: 10px 0px;
+}
+
+.ln-btn {
+    border: none;
+    background-color: dodgerblue;
+    padding: 14px 0px;
+    margin: 10px 0px;
+    color: white;
+    width: 100%;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.ln-btn:hover {
+    opacity: 1;
+}
+
+.ln-input-fld:focus {
+    border: 2px solid dodgerblue;
+}
+
+.eye-icon {
     position: absolute;
-    top: -110%;
-    left: 31%;
-    padding: 1% 20%;
-    border-radius: 3px;
-    color: red;
-    display: none;
+    right: 490px;
+    top: 288px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.error {
+  color: #ff0000;
 }
 
 .wd-300 {
@@ -33,8 +161,16 @@
     border-radius: 12px;
 }
 
-.txt-align-cntr {
+.txt-al-ct {
     text-align: center;
+}
+
+.txt-al-lt {
+    text-align: left;
+}
+
+.txt-al-rt {
+    text-align: right;
 }
 
 label {
@@ -88,8 +224,8 @@ label {
     height: 100px;
 }
 
-.mrgn-btm-20 {
-    margin-bottom: 20px;
+.mrgn-20 {
+    margin: 20px;
 }
 
 .padng-5 {
@@ -102,6 +238,10 @@ label {
 
 .mrgn-tp-15 {
     margin-top: 15px;
+}
+
+.mr-rt-4 {
+    margin-right: 4px;
 }
 
 .padng-10 {
@@ -124,8 +264,8 @@ label {
     margin-bottom: 40px;
 }
 
-.clr-blu {
-    color: blue;
+* {
+    margin-bottom: 10px;
 }
 
 .wd-45 {
@@ -159,3 +299,16 @@ label {
 .pd-r-20{
     padding-right: 20px;
 }
+
+.flip, .panel {
+    padding: 5px;
+    background-color: pink;
+    text-align: center;
+    border: 2px solid yellow;
+
+   }
+
+   .panel {
+   padding: 30px;
+   display: none;
+   }

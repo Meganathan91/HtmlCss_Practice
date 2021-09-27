@@ -1,9 +1,4 @@
 $(document).ready(function() {
-    $.validator.setDefaults({
-        submitHandler: function(form) {
-            form.submit();
-        }
-      });
    $("#signup").validate({
       rules: {
          firstname: "required",
@@ -43,9 +38,9 @@ $(document).ready(function() {
             lastname: "Please enter last name",
             email: "Please enter Email",
             password: "Enter Password",
-            conformPassword: "Enter Confirm Password Same as Password",
+            conformPassword: "Enter Confirm Password",
             phone: "Enter 10 digits mobile no",
-            gender: "Select Gender",
+            gender: "<span>Select Gender</span>",
             birthdate: {
                 required: "Enter your DOB",
                 date: "Please enter correct date format"
