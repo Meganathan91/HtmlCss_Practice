@@ -13,34 +13,36 @@
 <body>
 <div class="txt-al-ct">
     <h2>Login Page</h2>
-    <p id="email_error" class="flip"></p>
+    <p id="email_error" class="panel"></p>
     <p id="pass_error" class="panel"></p>
 </div>
 <div class="login-cont">
-    <form name="" action="" id="login_form">
+    <form name="" action="" id="login">
         <div align="center" style="border-bottom: 2px solid dodgerblue;">
             <i class="fa fa-user fa-5x ln-icon"></i>
         </div>
         <div class="d-flex">
             <i class="fa fa-envelope ln-fld-icon"></i>
-            <input type="text" name="email" placeholder="Enter Email" id="email" class="ln-input-fld">
+            <input type="text" name="email" placeholder="Enter Email" id="email" class="ln-input-fld" value="mega91raja@gmail.com">
         </div>
+        <div id="email_err"></div>
         <div class="d-flex">
             <i class="fa fa-lock ln-fld-icon"></i>
-            <input type="password" name="password" placeholder="Enter Password" id="pass" class="ln-input-fld">
+            <input type="password" name="password" placeholder="Enter Password" id="pass" class="ln-input-fld" value="9790842304">
             <i class="fa fa-eye-slash eye-icon" id="eye"></i>
         </div>
+        <div id="pass_err"></div>
         <div>
             <input type="submit" value="Login" id="btn" class="ln-btn ln-btn-hover">
         </div>
         <div class="row">
-        <div class="clm">
-            <input type="checkbox" name="checkbox">
-            <label>Keep me signed in</label>
-        </div>
-        <div class="clm txt-al-rt">
-            <a href="../html/ForgetPassword.html" class="clr-blu txt-decor-nn" style="color: dodgerblue;">Forget Password?</a>
-        </div>
+            <div class="clm">
+                <input type="checkbox" name="checkbox">
+                <label>Keep me signed in</label>
+            </div>
+            <div class="clm txt-al-rt">
+                <a href="../html/ForgetPassword.html" class="clr-blu txt-decor-nn" style="color: dodgerblue;">Forget Password?</a>
+            </div>
         </div>
         <div align="center">
             New User? <a href="SignUp.html" class="clr-blu txt-decor-nn" style="color: dodgerblue;">Sign Up</a>

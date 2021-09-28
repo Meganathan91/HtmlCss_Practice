@@ -6,6 +6,7 @@
     <script src="../js/jquery.validate.min.js"></script>
     <script src="../js/fieldvalidate.js"></script>
     <link rel="stylesheet" href="../css/styles.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>SignUp Page</title>
 </head>
@@ -16,14 +17,18 @@
 <div class="container">
     <form action="" id="signup">
         <div class="row">
-            <div class="clm d-flex">
-                <i class="fa fa-user icon"></i>
+            <div class="clm">
+                <div class="d-flex">
+                <!--<i class="fa fa-user icon"></i>-->
                 <input type="text" name="firstname" placeholder="Enter First Name" id="name" class="input-field">
-                <p id="name_error"></p>
+                </div>
+                <label>hi</label>
             </div>
-            <div class="clm d-flex">
-                <i class="fa fa-user icon"></i>
+            <div class="clm">
+                <div class="d-flex">
+                <!--<i class="fa fa-user icon"></i>-->
                 <input type="text" name="lastname" placeholder="Enter Last Name" class="input-field">
+                </div>
             </div>
         </div>
         <div class="row">
@@ -48,7 +53,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="clm">
+            <div class="clm gender">
                 <label style="margin-right: -5px;">Gender</label>
                 <input type="radio" name="gender" value="male" style="margin-top: 23px;">Male
                 <input type="radio" name="gender" value="female">Female
@@ -59,7 +64,7 @@
             </div>
         </div>
         <div>
-            <input type="submit" value="Register" class="btn btn-hvr">
+            <input type="submit" value="Register" class="btn btn-hvr" id="btn">
         </div>
         <div class="txt-al-rt clr-blu">
             Already Have Account? <a href="Login.html" class="clr-blu txt-decor-nn" style="color: dodgerblue;

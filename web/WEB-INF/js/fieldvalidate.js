@@ -1,8 +1,14 @@
 $(document).ready(function() {
-   $("#signup").validate({
+var signupForm = $("#signup");
+   signupForm.validate({
       rules: {
-         firstname: "required",
-         lastname: "required",
+         firstname: {
+            required: true,
+            noSpace: true
+         },
+         lastname: {
+            required: true
+         },
          email: {
              required: true,
              email: true,
@@ -45,8 +51,25 @@ $(document).ready(function() {
                 required: "Enter your DOB",
                 date: "Please enter correct date format"
             }
+      },
+      submitHandler: function(form) {
+          form.submit();
+        },
+      errorPlacement: function(error,element) {
+        if(element.is(":radio")) {
+            error.appendTo(element.parents(".gender"));
+        } else {
+            error.insertAfter(element);
+        }
       }
-
    });
-
-});
+/*
+   $('#btn').click(function() {
+           if (signupForm.valid()) {
+               alert('form is valid - not submitted');
+               return false;
+           } else {
+               alert('form is not valid');
+           }
+       });*/
+ });
