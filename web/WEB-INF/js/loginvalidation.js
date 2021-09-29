@@ -31,10 +31,10 @@ $(document).ready(function() {
           if(email == "" || pass == "") {
               $("#email_err").html("Please enter Email").addClass("error-msg");
               $("#pass_err").html("Please enter Password").addClass("error-msg");
-          } /*else {
+          } else {
               $("#email_err").html("").removeClass("error-msg");
               $("#pass_err").html("").removeClass("error-msg");
-          }*/
+          }
 });
 
 /*submitHandler: function(form) {
