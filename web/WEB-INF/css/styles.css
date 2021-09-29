@@ -131,8 +131,8 @@
 
 .eye-icon {
     position: absolute;
-    right: 490px;
-    top: 288px;
+    right: 10px;
+    top: 15px;
     cursor: pointer;
     padding: 5px;
 }

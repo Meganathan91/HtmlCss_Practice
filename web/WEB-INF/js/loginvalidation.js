@@ -6,7 +6,8 @@ $(document).ready(function() {
            $("#pass").attr("type", type);
         });
 
-   /* $("#email").keyup(function() {
+
+    $("#email").keyup(function() {
         var email = $(this).val();
         if(email == "mega91raja@gmail.com") {
         $("#email_error").html("").hide();
@@ -22,7 +23,23 @@ $(document).ready(function() {
         } else {
         $("#pass_error").fadeIn("panel").html("Enter Password");
         }
-    });*/
+    });
+
+        $("#btn").click(function(){
+          const email= $("#email").val();
+          const pass= $("#pass").val();
+          if(email == "" || pass == "") {
+              $("#email_err").html("Please enter Email").addClass("error-msg");
+              $("#pass_err").html("Please enter Password").addClass("error-msg");
+          } /*else {
+              $("#email_err").html("").removeClass("error-msg");
+              $("#pass_err").html("").removeClass("error-msg");
+          }*/
+});
+
+/*submitHandler: function(form) {
+          form.submit();
+          }*/
 
     /*$("#btn").click(function () {
       //e.preventDefault();
@@ -38,19 +55,11 @@ $(document).ready(function() {
    /* var login = $("#login");
         if(!login.valid()) {
             return false;
-        }*/
+        }*//*
     var login = $("#login");
-    login.submit(function (e) {
-    const email= $("#email").val();
-        const pass= $("#pass").val();
-        if(email == "" || pass == "" || pass != "9790842304" || email != "mega91raja@gmail.com") {
-            $("#email_err").html("Please enter Email").addClass("error-msg");
-            $("#pass_err").html("Please enter Password").addClass("error-msg");
-            e.preventDefault();
-        } else {
-         login.submit();
-        }
-        });
+    login.submit(function (e) {*/
+
+         /*|| pass != "9790842304" || email != "mega91raja@gmail.com"*/
   /* var login = $("#login")
     if(login.valid()) {
        e.currentTarget.submit();
