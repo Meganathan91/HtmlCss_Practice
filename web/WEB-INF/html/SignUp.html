@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <script src="../js/jquery.min.js"></script>
     <script src="../js/jquery.validate.min.js"></script>
-    <script src="../js/fieldvalidate.js"></script>
+    <script src="../js/signupvalidation.js"></script>
     <link rel="stylesheet" href="../css/styles.css">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>SignUp Page</title>
 </head>
@@ -19,48 +18,68 @@
         <div class="row">
             <div class="clm">
                 <div class="d-flex">
-                <!--<i class="fa fa-user icon"></i>-->
-                <input type="text" name="firstname" placeholder="Enter First Name" id="name" class="input-field">
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" name="firstname" placeholder="Enter First Name" id="fname" class="input-field">
                 </div>
-                <label>hi</label>
+                <label id="fname_err_msg"></label>
             </div>
             <div class="clm">
                 <div class="d-flex">
-                <!--<i class="fa fa-user icon"></i>-->
-                <input type="text" name="lastname" placeholder="Enter Last Name" class="input-field">
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" name="lastname" placeholder="Enter Last Name" id="lname" class="input-field">
                 </div>
+                <label id="lname_err_msg"></label>
             </div>
         </div>
         <div class="row">
-            <div class="clm d-flex">
-                <i class="fa fa-envelope icon"></i>
-                <input type="email" name="email" placeholder="Enter Email" class="input-field">
+            <div class="clm">
+                <div class="d-flex">
+                    <i class="fa fa-envelope icon"></i>
+                    <input type="email" name="email" placeholder="Enter Email" class="input-field" id="email">
+                </div>
+                <label id="email_err_msg"></label>
             </div>
-            <div class="clm d-flex">
-                <i class="fa fa-phone icon"></i>
-                <input type="text" name="phone" placeholder="Enter Phone Number" class="input-field">
-            </div>
-        </div>
-        <div class="row">
-            <div class="clm d-flex">
-                <i class="fa fa-lock icon"></i>
-                <input type="password" name="password" id="pass" placeholder="Enter Password" class="input-field">
-            </div>
-            <div class="clm d-flex">
-                <i class="fa fa-lock icon"></i>
-                <input type="password" name="conformPassword" id="cpass" placeholder="Enter Conform Password"
-                       class="input-field">
+            <div class="clm">
+                <div class="d-flex">
+                    <i class="fa fa-phone icon"></i>
+                    <input type="text" name="phonenumber" placeholder="Enter Phone Number" class="input-field"
+                           id="phonenumber">
+                </div>
+                <label id="phone_err_msg"></label>
             </div>
         </div>
         <div class="row">
-            <div class="clm gender">
-                <label style="margin-right: -5px;">Gender</label>
-                <input type="radio" name="gender" value="male" style="margin-top: 23px;">Male
-                <input type="radio" name="gender" value="female">Female
+            <div class="clm">
+                <div class="d-flex">
+                    <i class="fa fa-lock icon"></i>
+                    <input type="password" name="password" id="pass" placeholder="Enter Password" class="input-field">
+                </div>
+                <label id="pass_err_msg"></label>
             </div>
-            <div class="clm d-flex">
-                <i class="fa fa-birthday-cake icon"></i>
-                <input type="text" name="birthdate" placeholder="yyyy-MM-dd" class="input-field">
+            <div class="clm">
+                <div class="d-flex">
+                    <i class="fa fa-lock icon"></i>
+                    <input type="password" name="conformPassword" id="cpass" placeholder="Enter Conform Password"
+                           class="input-field">
+                </div>
+                <label id="cpass_err_msg"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="clm">
+                <div class=gender">
+                    <label style="margin-right: -5px;">Gender</label>
+                    <input type="radio" name="gender" value="male" style="margin-top: 23px;">Male
+                    <input type="radio" name="gender" value="female">Female
+                </div>
+                <label id="gender_err_msg"></label>
+            </div>
+            <div class="clm">
+                <div class="d-flex">
+                    <i class="fa fa-birthday-cake icon"></i>
+                    <input type="text" name="birthdate" placeholder="yyyy-MM-dd" class="input-field">
+                </div>
+                <label id="birthdate_err_msg"></label>
             </div>
         </div>
         <div>
