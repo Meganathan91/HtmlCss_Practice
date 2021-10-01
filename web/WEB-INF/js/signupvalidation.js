@@ -1,4 +1,19 @@
 $(document).ready(function() {
+
+$("#fname").keypress(function(e){
+    if($(this).val() == ' ') {
+        $("#fname_err_msg").html("Space not allowed").addClass("error");
+    return false;
+    } else {
+        $("#fname_err_msg").html("").removeClass("error");
+    }
+});
+$("#lname").keypress(function(e){
+    if(e.which === 32) {
+    $("#lname_err_msg").html("Space not allowed").addClass("error");
+    return false;
+    }
+});
 var signupForm = $("#signup");
    signupForm.validate({
       rules: {
@@ -38,7 +53,10 @@ var signupForm = $("#signup");
          }
       },
       messages: {
-            firstname: "Enter first name",
+
+            firstname: {
+            required: "Enter first name"
+            },
             lastname: "Enter last name",
             email: {
                 required: "Enter Email",
@@ -68,8 +86,13 @@ var signupForm = $("#signup");
             }
       },
       errorPlacement: function(error,element) {
+
            if (element.attr("name") == "firstname") {
                $("#fname_err_msg").html(error);
+               return false;
+           }
+           if ($("#fname").val() == ' ') {
+               $("#fname_err_msg").html("Space not allowed");
                return false;
            }
            if (element.attr("name") == "lastname") {
@@ -110,7 +133,28 @@ var signupForm = $("#signup");
            }
       },
       submitHandler: function(form) {
-          form.submit();
+      form.submit();
+        var fname = $('input[name="firstname"]').val();
+        var lname = $('input[name="lastname"]').val();
+        var email = $('input[name="email"]').val();
+        var phone = $('input[name="phonenumber"]').val();
+        var password = $('input[name="password"]').val();
+        var conformPassword = $("input[name='conformPassword']").val();
+        var gender = $("input[name='gender']:checked").val();
+        var birthdate = $('input[name="birthdate"]').val();
+      console.log(fname +"\n"+ lname +"\n"+ email +"\n"+ phone +"\n"+ password +"\n"+ conformPassword +"\n"+ gender +"\n"+ birthdate);
       }
-   });
+      });
+     /*$("#signup").submit(function(event){
+        //event.preventDefault();
+        var name = $("input[type='text']",this).val();
+        var email = $("#email",this).val();*//**//*
+        var fieldValuePairs = $("#signup").serializeArray();
+        $.each(fieldValuePairs, function(index, fieldValuePair) {
+            console.log("Item " + index + " is [" + fieldValuePair.name + "," + fieldValuePair.value + "]");
+        });
+        var name = $("#fname").val();
+        console.log(name);
+        });*/
+
  });

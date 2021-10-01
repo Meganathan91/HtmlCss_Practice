@@ -1,18 +1,18 @@
 $(document).ready(function(){
-        $("#eye").click(function() {
+var login = $("#login_form");
+    $("#eye").on("click", function() {
+        if($("#pass").val() != ""){
             $(this).toggleClass("fa-eye fa-eye-slash");
-            var type = $(this).hasClass("fa-eye") ? "text" : "password";
-            $("#pass").attr("type",type);
-        });
-
-    var login = $("#login_form");
+            $("#pass").attr("type",$(this).hasClass("fa-eye")?"text":"password");
+        }
+    });
     login.validate({
         rules: {
             email: {
-            required: true
+                required: true
             },
             password: {
-            required: true
+                required: true
             }
         },
         messages: {
@@ -20,19 +20,20 @@ $(document).ready(function(){
             password: "Enter Password"
         },
         errorPlacement: function(error, element) {
-        if (element.attr("name") == "email") {
-            $("#email_err_lbl").html(error);
-            $("#email").focus();
-            return false;
+            if (element.attr("name") == "email") {
+                $("#email_err_lbl").html(error);
+                return false;
+                }
+            if (element.attr("name") == "password") {
+                $("#pass_err_lbl").html(error);
+                return false;
             }
-        if (element.attr("name") == "password") {
-            $("#pass_err_lbl").html(error);
-            $("#password").focus();
+        }
+    });
+
+    $("#submit_btn").on("click",function(){
+        if(!login.valid()){
             return false;
-         }
-        },
-        submitHandler: function(form) {
-           form.submit();
         }
     });
 });
