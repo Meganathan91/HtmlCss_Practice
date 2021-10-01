@@ -59,7 +59,7 @@ var signupForm = $("#signup");
                 required: "Enter Confirm Password",
                 minlength: "Password must be at least 5 characters",
                 maxlength: "Password not exceed 12 characters",
-                equalTo: "The password and confirm password don't match"
+                equalTo: "Password, confirm password don't match"
             },
             gender: "Select Gender",
             birthdate: {

@@ -317,3 +317,11 @@ label {
    padding: 15px;
    display: none;
    }
+
+   .m-8 {
+    margin: 8px;
+   }
+
+   .ml-10 {
+    margin-left: 10px;
+   }
