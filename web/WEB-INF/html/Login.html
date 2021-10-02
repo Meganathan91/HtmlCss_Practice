@@ -13,8 +13,7 @@
 <body>
 <div class="txt-al-ct">
     <h2>Login Page</h2>
-    <p id="email_error" class="panel"></p>
-    <p id="pass_error" class="panel"></p>
+    <p id="email_password_error" class="panel"></p>
 </div>
 <div class="login-cont">
     <form name="" action="" id="login_form">
@@ -23,12 +22,12 @@
         </div>
         <div class="d-flex">
             <i class="fa fa-envelope ln-fld-icon"></i>
-            <input type="text" name="email" placeholder="Enter Email" id="email" class="ln-input-fld" />
+            <input type="text" name="email" placeholder="Enter Email" id="email" data-email="mega91raja@gmail.com" class="ln-input-fld" />
         </div>
-        <span id="email_err_lbl" style="margin-left: 40px;"></span>
+        <label id="email_err_lbl" style="margin-left: 40px;"></label>
         <div class="d-flex" style="position: relative;">
             <i class="fa fa-lock ln-fld-icon"></i>
-            <input type="password" name="password" placeholder="Enter Password" id="pass" class="ln-input-fld" />
+            <input type="password" name="password" placeholder="Enter Password" data-pass="9790842304" id="pass" class="ln-input-fld" />
             <i class="fa fa-eye-slash eye-icon" id="eye"></i>
         </div>
         <label id="pass_err_lbl" style="margin-left: 40px;"></label>
