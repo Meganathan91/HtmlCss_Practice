@@ -52,10 +52,12 @@ $(document).ready(function() {
             $("#email_password_error").show();
             setTimeout(function() { $("#email_password_error").hide(); }, 5000);
             return false;
-        }
-        window.location.href = "SuccessPage.html"+'?UserName=' + $("#email").attr("data-email");
+        } else {
+            alert("Successfully login, click Ok and after wait 5 second's to redirect to Success page...");
+            window.setTimeout(function() {
+            window.location.href = "SuccessPage.html?UserName=" + $("#email").attr("data-email");
+            }, 5000);
         //alert($("#email").attr("data-email"));
-        alert("hi");
-
+        }
     });
 });
