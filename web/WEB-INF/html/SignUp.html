@@ -6,90 +6,114 @@
     <script src="../js/jquery.validate.min.js"></script>
     <script src="../js/signupvalidation.js"></script>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!--datepicker -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> <!--datepicker -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>SignUp Page</title>
 </head>
 <body>
+<p id="error_msg" class="panel" style="display:none"></p>
 <div class="container pos-tp-5 mr-bt-10">
     <h2 align="center">SignUp Page</h2>
 </div>
 <div class="container">
-    <form action="" id="signup">
+    <form action="" id="signup_form">
         <div class="row">
-            <div class="clm">
-                <div class="d-flex m-8">
+            <div class="clm m-8">
+                <div class="d-flex ">
                     <i class="fa fa-user icon"></i>
-                    <input type="text" name="firstname" placeholder="Enter First Name" id="fname" class="input-field" />
+                    <input type="text" name="firstname" placeholder="Enter First Name" id="fname" class="input-field"/>
                 </div>
-                <label class="ml-10" id="fname_err_msg"></label>
+                <div class="m-8-35">
+                    <label class="ml-10" id="fname_err_msg"></label>
+                </div>
             </div>
-            <div class="clm">
-                <div class="d-flex m-8">
+            <div class="clm m-8">
+                <div class="d-flex ">
                     <i class="fa fa-user icon"></i>
-                    <input type="text" name="lastname" placeholder="Enter Last Name" id="lname" class="input-field" />
+                    <input type="text" name="lastname" placeholder="Enter Last Name" id="lname" class="input-field"/>
                 </div>
-                <label class="ml-10" id="lname_err_msg"></label>
+                <div>
+                    <div class="m-8-35">
+                        <label class="ml-10" id="lname_err_msg"></label>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="clm">
-                <div class="d-flex m-8">
+            <div class="clm  m-8">
+                <div class="d-flex">
                     <i class="fa fa-envelope icon"></i>
-                    <input type="email" name="email" placeholder="Enter Email" class="input-field" id="email" />
+                    <input type="email" name="email" placeholder="Enter Email" class="input-field" id="email"/>
                 </div>
-                <label class="ml-10" id="email_err_msg"></label>
+                <div class="m-8-35">
+                    <label class="ml-10" id="email_err_msg"></label>
+                </div>
             </div>
-            <div class="clm">
-                <div class="d-flex m-8">
+            <div class="clm m-8">
+                <div class="d-flex ">
                     <i class="fa fa-phone icon"></i>
                     <input type="text" name="phonenumber" placeholder="Enter Phone Number" class="input-field"
-                           id="phonenumber" />
+                           id="phonenumber"/>
                 </div>
-                <label class="ml-10" id="phone_err_msg"></label>
+                <div class="m-8-35">
+                    <label class="ml-10" id="phone_err_msg"></label>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="clm">
-                <div class="d-flex m-8">
+            <div class="clm m-8">
+                <div class="d-flex ">
                     <i class="fa fa-lock icon"></i>
-                    <input type="password" name="password" id="pass" placeholder="Enter Password" class="input-field" />
+                    <input type="password" name="password" id="pass" placeholder="Enter Password"
+                           class="input-field"/>
                 </div>
-                <label class="ml-10" id="pass_err_msg"></label>
+                <div class="m-8-35">
+                    <label class="ml-10" id="pass_err_msg"></label>
+                </div>
             </div>
-            <div class="clm">
-                <div class="d-flex m-8">
+            <div class="clm m-8">
+                <div class="d-flex ">
                     <i class="fa fa-lock icon"></i>
-                    <input type="password" name="conformPassword" id="cpass" placeholder="Enter Conform Password"
-                           class="input-field" />
+                    <input type="password" name="conformPassword" id="cpass"
+                           placeholder="Enter Conform Password"
+                           class="input-field"/>
                 </div>
-                <label class="ml-10" id="cpass_err_msg"></label>
+                <div class="m-8-35">
+                    <label class="ml-10" id="cpass_err_msg"></label>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="clm">
-                <div class="gender m-8">
+            <div class="clm m-8">
+                <div class="gender ">
                     <label style="margin-right: -5px;">Gender</label>
-                    <input type="radio" name="gender" value="male" style="margin-top: 23px;" />Male
-                    <input type="radio" name="gender" value="female" />Female
+                    <input type="radio" name="gender" value="male" style="margin-top: 23px;"/>Male
+                    <input type="radio" name="gender" value="female"/>Female
                 </div>
-                <label class="ml-10" id="gender_err_msg"></label>
+                <div class="m-8-35">
+                    <label class="ml-10" id="gender_err_msg"></label>
+                </div>
             </div>
-            <div class="clm">
-                <div class="d-flex m-8">
+            <div class="clm m-8">
+                <div class="d-flex ">
                     <i class="fa fa-birthday-cake icon"></i>
-                    <input type="text" name="birthdate" placeholder="yyyy-MM-dd" class="input-field" />
+                    <input name="birthdate" placeholder="yyyy-MM-dd" class="input-field" id="datepicker"
+                           readonly="readonly"/>
                 </div>
-                <label class="ml-10" id="birthdate_err_msg"></label>
+                <div class="m-8-35">
+                    <label class="ml-10" id="birthdate_err_msg"></label>
+                </div>
             </div>
-        </div>
-        <div>
-            <input type="submit" value="Register" class="btn btn-hvr" id="btn" />
-        </div>
-        <div class="txt-al-rt clr-blu">
-            Already Have Account? <a href="Login.html" class="clr-blu txt-decor-nn" style="color: dodgerblue;
-">Login</a>
         </div>
     </form>
+    <div>
+        <button type="button" class="btn btn-hvr" id="submit_signup_btn">Register</button>
+    </div>
+    <div class="txt-al-rt clr-blu">
+        Already Have Account? <a href="Login.html" class="clr-blu txt-decor-nn" style="color: dodgerblue;
+">Login</a>
+    </div>
 </div>
 </body>
 </html>

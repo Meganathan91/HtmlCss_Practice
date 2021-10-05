@@ -11,38 +11,57 @@
 
 </head>
 <body>
+<div>
+    <p id="email_password_error" class="panel" style="display:none"></p>
+</div>
 <div class="txt-al-ct">
     <h2>Login Page</h2>
-    <p id="email_password_error" class="panel"></p>
 </div>
 <div class="login-cont">
-    <form name="" action="" id="login_form">
-        <div align="center" style="border-bottom: 2px solid dodgerblue;">
-            <i class="fa fa-user fa-5x ln-icon"></i>
+    <div align="center" style="border-bottom: 2px solid dodgerblue; margin-bottom: 25px;">
+        <i class="fa fa-user fa-5x ln-icon"></i>
+    </div>
+    <form id="login_form">
+        <div class="row" style="width: 200%;">
+            <div class="clm">
+                <div class="d-flex">
+                    <i class="fa fa-envelope ln-fld-icon"></i>
+                    <input type="text" name="email" placeholder="Enter Email" id="email"
+                           data-email="mega91raja@gmail.com" class="ln-input-fld"/>
+                </div>
+            </div>
         </div>
-        <div class="d-flex">
-            <i class="fa fa-envelope ln-fld-icon"></i>
-            <input type="text" name="email" placeholder="Enter Email" id="email" data-email="mega91raja@gmail.com" class="ln-input-fld" />
+        <div style="margin-left: 42px;">
+            <label id="email_err_lbl" ></label>
         </div>
-        <label id="email_err_lbl" style="margin-left: 40px;"></label>
-        <div class="d-flex" style="position: relative;">
-            <i class="fa fa-lock ln-fld-icon"></i>
-            <input type="password" name="password" placeholder="Enter Password" data-pass="9790842304" id="pass" class="ln-input-fld" />
-            <i class="fa fa-eye-slash eye-icon" id="eye"></i>
+        <div class="row" style="width: 200%; margin-top: 20px;">
+            <div class="clm">
+                <div class="d-flex" style="position: relative;">
+                    <i class="fa fa-lock ln-fld-icon"></i>
+                    <input type="password" name="password" placeholder="Enter Password" data-pass="9790842304"
+                           id="pass" class="ln-input-fld"/>
+                    <i class="fa fa-eye-slash eye-icon-position" id="eye"></i>
+                </div>
+            </div>
         </div>
-        <label id="pass_err_lbl" style="margin-left: 40px;"></label>
+        <div style="margin-left: 42px;">
+            <label id="pass_err_lbl" ></label>
+        </div>
     </form>
-    <button type="button" id="submit_btn" class="ln-btn ln-btn-hover ">Login</button>
-    <div class="row">
+    <div style="margin-top: 20px;">
+        <button type="button" id="submit_btn" class="ln-btn ln-btn-hover;">Login</button>
+    </div>
+    <div class="row" style="margin-top: 20px;">
         <div class="clm">
             <input type="checkbox" name="checkbox">
             <label>Keep me signed in</label>
         </div>
         <div class="clm txt-al-rt">
-            <a href="../html/ForgetPassword.html" class="clr-blu txt-decor-nn" style="color: dodgerblue;">Forget Password?</a>
+            <a href="../html/ForgetPassword.html" class="clr-blu txt-decor-nn" style="color: dodgerblue;">Forget
+                Password?</a>
         </div>
     </div>
-    <div align="center">
+    <div align="center" style="margin-top: 20px;">
         New User? <a href="SignUp.html" class="clr-blu txt-decor-nn" style="color: dodgerblue;">Sign Up</a>
     </div>
 </div>
