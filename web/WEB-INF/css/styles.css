@@ -94,6 +94,60 @@
 .ln-input-fld:focus {
     border: 2px solid dodgerblue;
 }
+
+/* Reset page container */
+.pass-reset-container {
+    background-color: #E6E6FA;
+    margin: auto;
+    width: 33%;
+    padding: 20px;
+
+    margin: auto;
+    background-color: #E6E6FA;
+    padding: 20px;
+    width: 33%;
+    height: 350px;
+    margin-top: 70px;
+}
+
+.reset-email-icon {
+    padding: 8px 10px;
+    margin: 10px 0px;
+    border: 2px dodgerblue solid;
+    color: dodgerblue;
+}
+.reset-input-field {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+}
+.reset-input-field:focus {
+    border: 2px solid dodgerblue;
+}
+.reset-btn {
+    width: 100%;
+    padding: 14px 0px;
+    margin: 0px 0px;
+    border: none;
+    outline: none;
+    background-color: dodgerblue;
+    opacity: 0.8px;
+    color: white;
+    cursor: pointer;
+}
+.reset-btn:hover {
+    opacity: 0.8;
+}
+.clr {
+    color: #E6E6FA;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
 .m-8-35 {
     margin: -8px 36px;
 }
@@ -195,7 +249,9 @@ label {
 .pdng-5 {
     padding: 5px;
 }
-
+.p-10 {
+    padding: 10px;
+}
 .float-rt {
     float: right;
 }
