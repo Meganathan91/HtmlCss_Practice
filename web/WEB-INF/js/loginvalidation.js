@@ -48,7 +48,7 @@ $(document).ready(function() {
         }
         if ($("#email").attr("data-email") != $("#email").val() || $("#pass").attr("data-pass") != $("#pass").val()) {
             //alert("Wait until 10 seconds for page redirect to another page...")
-            $("#email_password_error").text("Given information is not available");
+            $("#email_password_error").text("Given Username or Password incorrect");
             $("#email_password_error").show();
             setTimeout(function() { $("#email_password_error").hide(); }, 5000);
             return false;
