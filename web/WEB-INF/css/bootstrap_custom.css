@@ -1,0 +1,55 @@
+
+.body {
+    background-color: blue;
+}
+.bg-color {
+    background-color: lightblue;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.input-fields {
+color: #777;
+width: 100%;
+border: none;
+outline: none;
+border-bottom: 1px solid #808080;
+}
+
+select {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid #808080;
+}
+
+.border-radius {
+    border-radius: 0px;
+}
+
+div.container {
+    background-color:transparent;
+}
+
+.vertical-text{
+    font-size: 4rem;
+    color: white;
+    letter-spacing: 3px;
+    right: -45px;
+    bottom: 50px;
+    position: absolute;
+    transform: rotate(270deg);
+    font-family: serif;
+    }
+
+.error {
+    color: red;
+  }
+
+  .d-flx {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+

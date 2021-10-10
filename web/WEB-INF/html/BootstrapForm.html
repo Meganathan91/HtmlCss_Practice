@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Form</title>
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" style="width: 60%;">
+    <div class="card">
+        <div class="card-header">Register Form</div>
+        <div class="card-body">
+            <form name="register" action="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Name<span class="text-danger"> *</span></label>
+                            <input type="text" placeholder="Enter Your Name" required class="form-control"
+                                   id="name"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email">Email<span class="text-danger"> *</span></label>
+                            <input type="email" name="email" placeholder="account@domail.com" required
+                                   class="form-control" id="email">
+                            <small>We won't share your email to anyone</small>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="number">Phone Number<span class="text-danger">*</span></label>
+                            <input type="number" placeholder="Enter Your number" required class="form-control"
+                                   id="number"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="language">Language</label>
+                            <select name="language" id="language" class="form-control">
+                                <option value="">---Select Language---</option>
+                                <option value="tamil">Tamil</option>
+                                <option value="english">English</option>
+                                <option value="hindi">Hindi</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="gender" value="male" class="ml-2 form-check-input"
+                                       id="gender-male">
+                                <label for="gender-male" class="form-check-label">Male</label>
+                                <input type="radio" name="gender" value="female" class="ml-2 form-check-input"
+                                       id="gender-female">
+                                <label for="gender-female" class="form-check-label">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" placeholder="Enter Message Briefly..." rows="3"
+                                      class="form-control" id="message"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" name="agreement" id="agreement"
+                                       class="form-check-input"/>
+                                <label for="agreement" class="form-check-label">I agree to terms and
+                                    conditions</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -4,25 +4,57 @@
     <meta charset="UTF-8">
     <title>Title</title>
   <link rel="stylesheet" href="../css/myStyles.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap_custom.css">
+  <!-- Select2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Select2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+  <script>
+
+    $(document).ready(function(){
+
+  // Initialize Select2
+  $('#sel_users').select2();
+});
+  </script>
 </head>
 <body>
-<div style="margin: auto; margin-top: 50px; display: inline-block;">
-<form>
-  <div style="float:left; margin: 10px; " >
-    <label for="name" >Name</label>
-    <input id="name" type="text" value="" name="name" >
-  </div>
+<div class="container">
+  <!-- Use to Initialize select2 -->
+  <select id='sel_users'>
+    <option value=''>-- Select User--</option>
+    <option value='yogesh'>Yogesh Singh</option>
+    <option value='sonarika'>Sonarika Bhadoria</option>
+    <option value='anil'>Anil Singh</option>
+    <option value='akilesh'>Akilesh Sahu</option>
+  </select>
 
-  <div style="float:left; margin: 10px; " >
-    <label for="email" >Email</label>
-      <input id="email" type="text" value="" name="email">
-  </div>
+  <br><br>
+  <!-- Use to set an option selected in the First dropdown -->
+  Set selected:
+  <select id='user_selected'>
+    <option value=''>-- Select User--</option>
+    <option value='yogesh'>Yogesh Singh</option>
+    <option value='sonarika'>Sonarika Bhadoria</option>
+    <option value='anil'>Anil Singh</option>
+    <option value='akilesh'>Akilesh Sahu</option>
+  </select>
+  <div class="row"  style="height: 450px;">
+    <div class="col-md-3" style="background-color: lightblue; height: 450px;">
 
-  <div >
-    <input type="submit" value="Submit" >
-    <input type="reset" value="Reset" >
+      <div>
+        <p class="vertical-text">Test 12</p>
+      </div>
+    </div>
+    <div class="col-md-9" style="background-color: white; height: 450px;">
+      <p>hi</p>
+    </div>
   </div>
-</form>
-</div>
+  </div>
 </body>
 </html>

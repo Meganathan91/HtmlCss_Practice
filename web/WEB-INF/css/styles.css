@@ -431,3 +431,25 @@
   .clr-rng {
     color:orange;
   }
+
+  .error {
+    color: red;
+  }
+
+ /* Bootstrap Grid Practice */
+    .grid-layout.container {
+      border: 2px solid red;
+    }
+
+    .bg {
+      /* margin: 2px; */
+      color: white;
+      padding: 10px;
+      background-color: gray;
+      border: 2px solid orange;
+    }
+
+    /* radio button size */
+    input[type=radio]{
+      transform:scale(1.4);
+    }
